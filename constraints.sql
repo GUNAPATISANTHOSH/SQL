@@ -1,12 +1,11 @@
-NOT NULL -(null values are not allowed but duplicated allowed)
-UNIQUE Duplicates not alllowed but null values allowed
-check
-Default
-PK
-FK
-INDEX
-
-
+NOT NULL -(null values are not allowed but duplicated allowed)|
+UNIQUE Duplicates not alllowed but null values allowed                    |
+check                                                                     |
+Default                                                                   |
+PK - primary Key - only one primary key(null and duplicates not alllowed) |
+FK- Foreign Key          a colum constraint which is refer to another table primary key                                      |
+INDEX                                                         |
+---------------------------------------------------------------
 create table employees(
 eid INT UNIQUE,
 ename VARCHAR(32) NOT NULL,
