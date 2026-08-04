@@ -30,4 +30,4 @@ VALUES
 
 -- matched rows from both tables 
 select * from employee,dept
-where employees.dept_id So I am given the courage to have employee city and department given all the queries from whatever once you've done this one location order details. order amount customer idea order system so here customer idea reference references to I will set the data types and common user it means order IDs order IDs develop IDS order quantity so credit customer IDs or data or quantities quantity one quantity two begin large ID and mobile number in case you are storing the data security ID and the back are tender and description comments decimal salary and price so most we are not using decimal check in Postgres we call decimal data type so I was an example once you turn this one now I'm not giving any queries like now I'm giving the small assignment you have to give me finite=dept.dept_id
+where employees.dept_id 

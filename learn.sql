@@ -1,13 +1,6 @@
 show databases;
 
 
-
-
-
-
-
-
-
 DDL-Data definition language
 CREATE          |
 ALTER           |--WORKS FOR BOTH DATABASES AND TABLES
