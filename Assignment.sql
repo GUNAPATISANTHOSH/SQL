@@ -396,7 +396,7 @@ where length(fname)=5;
 | 115 | Mohan | Manchu    | Hyderabad |  NULL |   70 |
 +-----+-------+-----------+-----------+-------+------+
 
-
+;
 -- 26. Write a query to find employee with null salary.
 
 select * from employee
@@ -412,3 +412,47 @@ where  city IS NOT NULL;
 
 delete from employee
 where eid=109;
+
+
+-- Write a query to group by employee with their age.
+
+SELECT age,count(*) from employee
+group by age;
+
+
++------+----------+
+| age  | count(*) |
++------+----------+
+|   52 |        1 |
+|   75 |        1 |
+|   45 |        1 |
+|   69 |        1 |
+|   65 |        1 |
+|   47 |        1 |
+|   40 |        3 |
+|   31 |        1 |
+|   27 |        1 |
+|   78 |        1 |
+|   35 |        1 |
+|   70 |        1 |
++------+----------+
+
+
+
+select city,count(*) as "no.of employees" from employee
+GROUP BY city;
+
++-----------+-----------------+
+| city      | no.of employees |
++-----------+-----------------+
+| Wayanad   |               1 |
+| New Delhi |               2 |
+| Nodia     |               1 |
+| Chennai   |               3 |
+| Mumbai    |               4 |
+| Hyderabad |               3 |
++-----------+-----------------+
+
+
+
+
