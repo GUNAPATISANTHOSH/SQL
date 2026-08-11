@@ -1,0 +1,158 @@
+To access - mongosh
+
+To create database - USE db8
+
+To access fatabase - Use db8 
+
+To create a collection/Table - db.createCollection("employees")
+
+To insert data - db.employees.insertOne({})
+
+To insert Many data - db.employees.insertMany({})
+
+To find/read - db.employees.find({"gender":"Male"})
+Enterprise db8> db.employees.find({"gender":"Male"})
+[
+  {
+    _id: ObjectId('6a7aca03e314d553c12900e3'),
+    id: 6,
+    first_name: 'Pepillo',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c12900e7'),
+    id: 10,
+    first_name: 'Craig',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c12900e8'),
+    id: 11,
+    first_name: 'Cull',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c12900e9'),
+    id: 12,
+    first_name: 'Clayborn',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c12900ec'),
+    id: 15,
+    first_name: 'Kendrick',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c12900f3'),
+    id: 22,
+    first_name: 'Penny',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c12900f4'),
+    id: 23,
+    first_name: 'Anson',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c12900f5'),
+    id: 24,
+    first_name: 'Hunter',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c12900f9'),
+    id: 28,
+    first_name: 'Eduino',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c12900fa'),
+    id: 29,
+    first_name: 'Hank',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c12900fb'),
+    id: 30,
+    first_name: 'De witt',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c1290100'),
+    id: 35,
+    first_name: 'Luis',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c1290103'),
+    id: 38,
+    first_name: 'Frasco',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c1290104'),
+    id: 39,
+    first_name: 'Berkly',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c1290105'),
+    id: 40,
+    first_name: 'Price',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c1290109'),
+    id: 44,
+    first_name: 'Berke',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c129010f'),
+    id: 50,
+    first_name: 'Zacharias',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c1290111'),
+    id: 52,
+    first_name: 'Robinet',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c1290112'),
+    id: 53,
+    first_name: 'Robin',
+    gender: 'Male'
+  },
+  {
+    _id: ObjectId('6a7aca03e314d553c1290114'),
+    id: 55,
+    first_name: 'Joe',
+    gender: 'Male'
+  }
+]
+Type "it" for more
+
+To find single data we can use insertone -  db.employees.findOne({"gender":"Male"})
+{
+  _id: ObjectId('6a7aca03e314d553c12900e3'),
+  id: 6,
+  first_name: 'Pepillo',
+  gender: 'Male'
+}
+
+db.employees.find({"gender":"Male"}).count()
+42
+
+
+To updateone data - db.employees.updateOne({"id":6},{$set:{"name":santhosh}})
+
+To updateMany data- db.employees.updateMany({},{$set:{"esal":45000}})
+
+To delete the table -db.employees.drop
+
+
+To find the gender:male and age>40 - db.users.findOne({"gender":"Male},"age":{$gte:40})
